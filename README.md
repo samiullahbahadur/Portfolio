@@ -2,6 +2,8 @@
 
 > A simple Portfolio project with about Samiullah Bahadur
 
+You can download my project  copy this link(git@github.com:samiullahbahadur/Portfolio.git) and git clone paste the link in the terminal
+
 ## Built With
 
 - HTML & CSS
