@@ -232,19 +232,21 @@ button:active {
 
 .card-availability {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
     ),
-    url(./image/Img\ Placeholder\ 13.png);
+    url(./image/IPlaceholder13.png);
   padding: 0 16px;
   padding-top: 84px;
 }
 
 .card-plceholder {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -289,15 +291,17 @@ button:active {
 
 .card-profisional {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
     ),
-    url(./image/Img\ Placeholder12.png);
+    url(./image/Placeholder12.png);
   padding: 0 16px;
   padding-top: 84px;
 }
+
 .card-profisional > h4 {
   font-family: Crete Round, sans-serif;
   font-style: normal;
@@ -308,7 +312,7 @@ button:active {
   padding-top: 45px;
 }
 
-.ccard-profisional > p {
+.card-profisional > p {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
