@@ -6,6 +6,15 @@
   margin: 0;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: white;
@@ -78,8 +87,8 @@ i {
   height: 200%;
   background-image: url("./image/Illustration-header@2x.png");
   background-repeat: no-repeat;
-  background-position-x: 395px;
-  background-position-y: 322px;
+  background-position-x: 331px;
+  background-position-y: 300px;
   background-size: 200px;
   transform: rotate(351deg);
 }
@@ -122,10 +131,11 @@ i {
 }
 
 .recent-works {
-  display: flex;
-  flex-direction: column;
   color: #1c1a19;
-  padding: 120px 24px;
+  display: grid;
+  justify-content: center;
+  padding: 120px 24px 120px 24px;
+  grid-template-columns: 327px;
 }
 
 .recent-works h3 {
@@ -232,69 +242,9 @@ button:active {
   grid-template-rows: 1fr;
 }
 
-.card-availability {
+.card-content {
   height: 386px;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(./image/IPlaceholder13.png);
-  padding: 0 16px;
-  padding-top: 84px;
-}
-
-.card-plceholder {
-  height: 386px;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(./image/Img\ Placeholder14.png);
-  padding: 0 16px;
-  padding-top: 84px;
-}
-
-.card-plceholder > h4 {
-  font-family: Crete Round, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 44px;
-  color: white;
-  padding-top: 45px;
-}
-
-.card-plceholder > p {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 12px;
-  color: white;
-}
-
-.work-card .card-plceholder > ul {
-  display: flex;
-  width: 370px;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.card-plceholder li {
-  color: white;
-  background: rgba(255, 255, 255, 0.096);
-  border: none;
-}
-
-.card-profisional {
-  height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -304,7 +254,7 @@ button:active {
   padding-top: 84px;
 }
 
-.card-profisional > h4 {
+.card-content > h4 {
   font-family: Crete Round, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -314,7 +264,7 @@ button:active {
   padding-top: 45px;
 }
 
-.card-profisional > p {
+.card-content > p {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -324,47 +274,14 @@ button:active {
   color: white;
 }
 
-.work-card .card-profisional > ul {
+.work-card .card-content > ul {
   display: flex;
-  width: 370px;
+
   justify-content: space-between;
   padding: 0;
 }
 
-.card-profisional li {
-  color: white;
-  background: rgba(255, 255, 255, 0.096);
-  border: none;
-}
-
-.card-availability > h4 {
-  font-family: Crete Round, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 44px;
-  color: white;
-  padding-top: 45px;
-}
-
-.card-availability > p {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 12px;
-  color: white;
-}
-
-.work-card .card-availability > ul {
-  display: flex;
-  width: 370px;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.card-availability li {
+.card-content li {
   color: white;
   background: rgba(255, 255, 255, 0.096);
   border: none;
@@ -531,4 +448,14 @@ footer {
 
 .footer i {
   color: #505f79;
+}
+
+.shape {
+  margin: 21px;
+  width: 134px;
+  height: 5px;
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 12px;
+  align-self: center;
 }
