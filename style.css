@@ -62,6 +62,10 @@ i {
   color: white;
 }
 
+.main {
+  width: 100%;
+}
+
 .landing {
   position: relative;
   background-color: #1c1a19;
