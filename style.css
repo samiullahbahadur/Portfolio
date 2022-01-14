@@ -62,10 +62,6 @@ i {
   color: white;
 }
 
-.main {
-  width: 100%;
-}
-
 .landing {
   position: relative;
   background-color: #1c1a19;
@@ -238,7 +234,8 @@ button:active {
 
 .card-availability {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -250,7 +247,8 @@ button:active {
 
 .card-plceholder {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -295,7 +293,8 @@ button:active {
 
 .card-profisional {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
