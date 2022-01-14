@@ -17,10 +17,6 @@ body {
   color: white;
 }
 
-.main {
-  width: 100%;
-}
-
 header {
   height: 48px;
   background: #3e3c3c;
@@ -244,8 +240,7 @@ button:active {
 
 .card-content {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -277,8 +272,6 @@ button:active {
 
 .work-card .card-content > ul {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
 }
 
 .card-content li {
