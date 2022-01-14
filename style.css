@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: white;
+  width: 100%;
 }
 
 header {
@@ -63,10 +64,11 @@ i {
 
 .landing {
   position: relative;
+
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  padding: 120px 24px;
+  padding: 100px 24px;
   overflow: hidden;
 }
 
@@ -101,6 +103,7 @@ i {
   padding: 10px 0;
   line-height: 64px;
   font-size: 56px;
+  width: 100%;
 }
 
 .intro h2 {
@@ -514,7 +517,6 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 2px solid red;
 }
 
 .footer .social-icon ul {
