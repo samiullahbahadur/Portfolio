@@ -668,6 +668,7 @@ footer {
   }
   .about-me .skill-set ul ul {
     display: flex;
+    display: block;
     flex-direction: column;
     align-items: flex-start;
   }
