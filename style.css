@@ -240,7 +240,8 @@ button:active {
 
 .card-content {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -452,6 +453,7 @@ footer {
   border-radius: 12px;
   align-self: center;
 }
+
 /* Desktop Version */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -464,6 +466,7 @@ footer {
     width: 100%;
     padding: 0 60px;
   }
+
   .landing::before {
     background-position: 45% -50%;
     background-size: 600px;
@@ -483,6 +486,7 @@ footer {
   .about-text p {
     width: 50%;
   }
+
   .about-me {
     content: "";
     background-color: #1c1a19;
@@ -502,6 +506,7 @@ footer {
   header {
     padding: 0 140px;
   }
+
   .navbar .humberger-menu {
     display: none;
   }
@@ -509,17 +514,20 @@ footer {
   .navbar .desktop-nav {
     display: flex;
   }
+
   .landing {
     height: 800px;
     padding: 0 22px;
     display: flex;
     flex-direction: row;
   }
+
   .landing::before {
     background-position: 45% -5%;
     background-size: 600px;
     transform: rotate(351deg);
   }
+
   .intro {
     width: 50%;
     display: flex;
@@ -545,6 +553,7 @@ footer {
     font-size: 20px;
     line-height: 32px;
   }
+
   .social-icon {
     display: flex;
     align-content: center;
@@ -555,17 +564,20 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+
   .recent-works {
     display: grid;
     justify-content: center;
     grid-template-columns: 100%;
     padding: 100px 118px;
   }
+
   .recent-works .first {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .recent-works h3 {
     display: flex;
     align-items: center;
@@ -582,6 +594,7 @@ footer {
     margin-left: 30px;
     margin-right: 20px;
   }
+
   .recent-work {
     display: flex;
     padding: 20px 10px;
@@ -613,6 +626,7 @@ footer {
   .cards-section {
     grid-template-columns: 32% 32% 32%;
   }
+
   .work-card .card-content > ul {
     justify-content: flex-start;
     padding: 24px 0;
@@ -644,6 +658,7 @@ footer {
   .about-text p {
     width: 50%;
   }
+
   .about-me {
     content: "";
     background-color: #1c1a19;
@@ -657,6 +672,7 @@ footer {
   .about-me .hr {
     padding-top: 100px;
   }
+
   .about-me .skill-set {
     padding: 120px 120px 0 120px;
   }
@@ -666,6 +682,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .about-me .skill-set ul ul {
     display: flex;
     flex-direction: column;
