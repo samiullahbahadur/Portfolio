@@ -1,7 +1,10 @@
 # Samiullah Bahadur Portfolio
 
 > A simple Portfolio project with about Samiullah Bahadur
+
 > ![screenshot](./image/screenshot.PNG)
+
+> In this Project, I used HTML and CSS (Media, Transition, flexbox, Grid and figma template)
 
 You can download my project copy this link(git@github.com:samiullahbahadur/Portfolio.git) and git clone paste the link in the terminal
 
