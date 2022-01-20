@@ -703,4 +703,9 @@ footer {
   .contact-me form {
     width: 60%;
   }
+  #text:hover {
+    transition: 0.2s ease;
+    transition-duration: 1.5s;
+    transform: translate(15px);
+  }
 }
