@@ -1,8 +1,9 @@
 # Samiullah Bahadur Portfolio
 
 > A simple Portfolio project with about Samiullah Bahadur
+> ![screenshot](./image/screenshot.PNG)
 
-You can download my project  copy this link(git@github.com:samiullahbahadur/Portfolio.git) and git clone paste the link in the terminal
+You can download my project copy this link(git@github.com:samiullahbahadur/Portfolio.git) and git clone paste the link in the terminal
 
 ## Built With
 
