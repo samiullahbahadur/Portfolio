@@ -715,4 +715,7 @@ footer {
     flex-direction: row;
     align-self: center;
   }
+  .footer {
+    height: 72px;
+  }
 }
