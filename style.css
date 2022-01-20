@@ -718,4 +718,7 @@ footer {
   .footer {
     height: 72px;
   }
+  .shape {
+    display: none;
+  }
 }
