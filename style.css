@@ -708,4 +708,11 @@ footer {
     transition-duration: 1.5s;
     transform: translate(15px);
   }
+  .contact-me form button {
+    align-self: flex-start;
+  }
+  .footer .social-icon ul {
+    flex-direction: row;
+    align-self: center;
+  }
 }
