@@ -240,8 +240,7 @@ button:active {
 
 .card-content {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -687,5 +686,21 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    padding: 140px;
+    gap: 40px;
+  }
+  .contact-me h6 {
+    width: 40%;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .contact-me form {
+    width: 60%;
   }
 }
