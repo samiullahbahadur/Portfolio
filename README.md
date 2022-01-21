@@ -1,6 +1,6 @@
 # Samiullah Bahadur Portfolio
 
-> A simple Portfolio project with about Samiullah Bahadur
+> Portfolio about Samiullah Bahadur
 
 > ![screenshot](./image/screenshot.PNG)
 
