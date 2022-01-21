@@ -240,8 +240,7 @@ button:active {
 
 .card-content {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -729,5 +728,31 @@ footer {
 
   .shape {
     display: none;
+  }
+  .logo:hover {
+    text-decoration: none;
+    animation-name: rotate;
+    animation-duration: 1s;
+    background-color: whitesmoke;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .women:hover {
+    text-decoration: none;
+    animation: z2 1s linear;
+  }
+
+  @keyframes z2 {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
   }
 }
