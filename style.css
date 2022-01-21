@@ -730,16 +730,31 @@ footer {
     display: none;
   }
 
-.logo:hover {
-  text-decoration: none;
-  animation-name: rotate;
-  animation-duration: 0.7s;
-  background-color: whitesmoke;
-}
-
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
+  .logo:hover {
+    text-decoration: none;
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    background-color: whitesmoke;
   }
-}
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .women:hover {
+    text-decoration: none;
+    animation: z2 1s linear;
+  }
+
+  @keyframes z2 {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+  }
 }
