@@ -729,4 +729,17 @@ footer {
   .shape {
     display: none;
   }
+
+.logo:hover {
+  text-decoration: none;
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  background-color: whitesmoke;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 }
