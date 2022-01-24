@@ -1,6 +1,8 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Samiullah Bahadur Portfolio
 
-> A simple Portfolio project with about Samiullah Bahadur
+>  Portfolio project about Samiullah Bahadur
 
 > ![screenshot](./image/screenshot.PNG)
 
@@ -11,7 +13,8 @@ You can download my project copy this link(git@github.com:samiullahbahadur/Portf
 ## Built With
 
 - HTML & CSS
-- FlexBox
+- FlexBox & grid
+  [Live Demo Link](https://samiullahbahadur.github.io/Portfolio/)
 
 👤 **Samiullah Bahadur**
 
@@ -26,3 +29,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](LICENSE.md) licensed.
+
+
