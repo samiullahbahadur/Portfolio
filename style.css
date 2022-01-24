@@ -453,6 +453,19 @@ footer {
   align-self: center;
 }
 
+.logo:hover {
+  text-decoration: none;
+  animation-name: rotate;
+  animation-duration: 1s;
+  background-color: whitesmoke;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Desktop Version */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
