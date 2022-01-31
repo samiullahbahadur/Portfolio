@@ -107,6 +107,11 @@ ul li a {
   align-items: center;
   height: 40px;
 }
+
+a:hover {
+  color: #f55800;
+}
+
 .desktop-nav li a {
   font-size: 32px;
   font-weight: 700;
@@ -117,10 +122,6 @@ ul li a {
 
 .desktop-nav .envelope {
   display: none;
-}
-
-a:hover {
-  color: #f55800;
 }
 
 i {
@@ -300,7 +301,8 @@ button:active {
 
 .card-content {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -524,6 +526,7 @@ footer {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -594,12 +597,14 @@ footer {
     height: 48px;
     padding: 0;
   }
+
   .desktop-nav li {
     opacity: 10;
     width: auto;
     border: none;
     padding: 0 1rem;
   }
+
   .desktop-nav li a {
     font-size: 18px;
     font-weight: 400;
@@ -833,6 +838,7 @@ footer {
   .shape {
     display: none;
   }
+
   .logo:hover {
     text-decoration: none;
     animation-name: rotate;
@@ -844,10 +850,12 @@ footer {
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
   }
+
   .women:hover {
     text-decoration: none;
     animation: z2 1s linear;
