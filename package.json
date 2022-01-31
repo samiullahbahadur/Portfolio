@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/samiullahbahadur/Portfolio#readme",
   "devDependencies": {
+    "eslint": "^8.8.0",
     "hint": "^6.1.9",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
