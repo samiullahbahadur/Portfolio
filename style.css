@@ -18,22 +18,76 @@ body {
 }
 
 header {
+  position: relative;
   height: 48px;
   background: #3e3c3c;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
-  padding: 0 24px;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+}
+
+.humberger-menu {
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.humberger-menu div {
+  width: 25px;
+  height: 4px;
+  background-color: #f4f5f7;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .navbar ul {
-  display: flex;
   list-style-type: none;
 }
 
-.navbar .desktop-nav {
-  display: none;
+.desktop-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  right: 0;
+  height: 100vh;
+  top: 48px;
+  background-color: #3e3c3c;
+  width: 100%;
+  padding: 0 24px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+  transform: translateX(0%) translateY(-48px);
+  height: 100vh;
+  padding-top: 48px;
+}
+
+.desktop-nav li {
+  width: 100%;
+  border-bottom: solid 1px #fff5e1;
+  padding: 0 24px;
+  text-align: left;
 }
 
 header a {
@@ -53,10 +107,16 @@ ul li a {
   align-items: center;
   height: 40px;
 }
+.desktop-nav li a {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff5e1;
+  padding: 36px 0;
+}
 
-.humberger-menu a {
-  width: 12px;
-  height: 18px;
+.desktop-nav .envelope {
+  display: none;
 }
 
 a:hover {
@@ -519,15 +579,43 @@ footer {
 
 @media screen and (min-width: 992px) {
   header {
-    padding: 0 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 148px;
+    height: 48px;
+    align-items: center;
+  }
+
+  .desktop-nav {
+    position: static;
+    flex-direction: row;
+    transform: translateX(0%);
+    height: 48px;
+    padding: 0;
+  }
+  .desktop-nav li {
+    opacity: 10;
+    width: auto;
+    border: none;
+    padding: 0 1rem;
+  }
+  .desktop-nav li a {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .navbar .desktop-nav {
+    display: inline-block;
+    display: flex;
+  }
+
+  .desktop-nav .envelope {
+    display: inline;
   }
 
   .navbar .humberger-menu {
     display: none;
-  }
-
-  .navbar .desktop-nav {
-    display: flex;
   }
 
   .landing {
