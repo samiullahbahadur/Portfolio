@@ -162,5 +162,6 @@ submitBtn.addEventListener('click', event => {
   if (pattern.test(emailInpute.value)) {
     failed(event);
   } else {
+    success();
   }
 });
