@@ -124,8 +124,3 @@ const openPopup = item => {
 popupBtn.forEach(item => {
   item.addEventListener('click', openPopup);
 });
-
-const closeBtn = document.querySelectorAll('.new-close-img');
-closeBtn.forEach(item => {
-  item.addEventListener('click', openPopup);
-});
