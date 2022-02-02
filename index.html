@@ -11,6 +11,7 @@
         <link href="style.css" rel="stylesheet">
         <link href="css/all.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+      
     
         <title>Bahadur Portfolio</title>
     </head>
@@ -22,16 +23,20 @@
     
             </div>
             <nav class="navbar ">
+
+                <ul class="desktop-nav" id="desktop-nav">
+                   <!--  <li class="nav-close"><i class="fas fa-times"></i> </li> -->
+                    <li class="nav-link" id="nav-link"><a href="#recent-works ">Portfolio</a></li>
+                    <li class="nav-link"><a href="#about-me ">About</a></li>
+                    <li class="nav-link"><a href="#contact-me">Contact Us</a></li>
+                    <li class="envelope" id="envelope"><a href="#"><i class="fas fa-envelope" ></i></a></li>
+                </ul>  
                 <div class="humberger-menu">
-                    <a href="# "><i class="fas fa-bars fa-2x"></i></a>
-                </div>
-                <ul class="desktop-nav">
-                    <li><a href="#recent-works ">Portfolio</a></li>
-                    <li><a href="#about-me ">About</a></li>
-                    <li><a href="#contact-me">Contact Us</a></li>
-                    <li><a href="# "><i class="fas fa-envelope"></i></a></li>
-                </ul>
-               
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                
             </nav>
         </header>
         <main>
@@ -78,8 +83,8 @@
         
             <div class="cards-section">
                 <div class="work-card">
-                    <div class="card-content">
-                        <h4>Professional Art Printing Data</h4>
+                    <div class="card-content flex-container " >
+                        <h4 class="title" > 1st: Printing Data</h4>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li>html</li>
@@ -87,11 +92,11 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See Project</button>
+                    <button type="button" class="card-button" id="firstTitle">See Project</button>
                 </div> 
                 <div class="work-card">
-                    <div class="card-content">
-                        <h4>Professional Art Printing Data</h4>
+                    <div class="card-content flex-container ">
+                        <h4 class="title">2nd: Printing Data </h4>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li>html</li>
@@ -99,11 +104,11 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See Project</button>
+                    <button type="button" class="card-button" id="secondTitle">See Project</button>
                 </div> 
                 <div class="work-card">
-                    <div class="card-content">
-                        <h4>Professional Art Printing Data</h4>
+                    <div class="card-content flex-container ">
+                        <h4 class="title">3tr: Printing Data</h4>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li>html</li>
@@ -111,11 +116,11 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See Project</button>
+                    <button type="button" class="card-button" id="thirdTitle">See Project</button>
                 </div> 
                 <div class="work-card">
-                    <div class="card-content">
-                        <h4>Professional Art Printing Data</h4>
+                    <div class="card-content flex-container ">
+                        <h4 class="title">4th: Printing Data</h4>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li>html</li>
@@ -123,11 +128,11 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See Project</button>
+                    <button type="button" class="card-button" id="fourthTitle">See Project</button>
                 </div> 
                 <div class="work-card">
-                    <div class="card-content">
-                        <h4>Professional Art Printing Data</h4>
+                    <div class="card-content  flex-container">
+                        <h4 class="title">5th: Printing Data</h4>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li>html</li>
@@ -135,11 +140,11 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See Project</button>
+                    <button type="button" class="card-button" id="fifthTitle">See Project</button>
                 </div> 
               <div class="work-card">
-                    <div class="card-content">
-                        <h4>Professional Art Printing Data</h4>
+                    <div class="card-content flex-container">
+                        <h4 class="title">6th: Printing Data</h4>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li>html</li>
@@ -147,7 +152,7 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See Project</button>
+                    <button type="button" class="card-button" id="sixthTitle">See Project</button>
                 </div> 
             </div>
         </section><!-- #Recent Works -->
@@ -225,10 +230,67 @@
             <div class="shape"></div>
         </div>
     </footer><!-- #Footer -->
+
+        <!-- ================
+              modal section
+          ================ -->
+          <section class="modal-section" id="main-project">
+            <div class="modal">
+              <h3>Multi Post Stories</h3>
+              <img src="image/x-icon.png" class="close-btn" alt="close button" />
+              <ul id="tech-used">
+                <li class="item">html</li>
+                <li class="item">Bootstrap</li>
+                <li class="item">Ruby on rails</li>
+              </ul>
+              <div class="modal-content">
+                <img
+                  src="image/snapshot.jpg"
+                  class="multi-image"
+                  alt="Multi post stories image"
+                />
+                <div class="modal-details">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essent
+                  </p>
+                  <ul class="modal-btn">
+                    <li>
+                      <button class="project-button" type="button">
+                        See Live
+                        <img
+                          class="modal-icon"
+                          src="image/Icon-see.svg"
+                          alt="watch live icon"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button class="project-button" type="button">
+                        See source
+                        <img
+                          class="modal-icon"
+                          src="image/github.png"
+                          alt="git hub icon"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section><!-- #modal section -->
     
         </main>
+        <script src="./js/script.js"></script>
+        
     
     <script src="https://kit.fontawesome.com/3d2d618d62.js" crossorigin="anonymous"></script>
+   
 
 </body>
 

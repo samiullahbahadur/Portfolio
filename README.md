@@ -12,9 +12,13 @@ You can download my project copy this link(git@github.com:samiullahbahadur/Portf
 
 ## Built With
 
-- HTML & CSS
-- FlexBox & grid
-- [Live Demo Link](https://samiullahbahadur.github.io/Portfolio/)
+- HTML
+- CSS
+- Javascript
+
+## Live Demo
+
+- [Bahadur-Portfolio](https://samiullahbahadur.github.io/Portfolio/).
 
 👤 **Samiullah Bahadur**
 
