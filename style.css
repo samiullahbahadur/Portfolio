@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
@@ -138,11 +138,11 @@ i {
 }
 
 .landing::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 200%;
   height: 200%;
-  background-image: url("./image/Illustration-header@2x.png");
+  background-image: url('./image/Illustration-header@2x.png');
   background-repeat: no-repeat;
   background-position-x: 331px;
   background-position-y: 300px;
@@ -162,7 +162,7 @@ i {
 }
 
 .intro h1 {
-  font-family: "crete round", serif;
+  font-family: 'crete round', serif;
   color: #ff6b00;
   text-transform: uppercase;
   padding: 10px 0;
@@ -172,7 +172,7 @@ i {
 }
 
 .intro h2 {
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -180,7 +180,7 @@ i {
 }
 
 .intro p {
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   line-height: 24px;
   font-size: 16px;
   font-style: normal;
@@ -301,8 +301,7 @@ button:active {
 
 .card-content {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -344,6 +343,7 @@ button:active {
 
 .work-card > button {
   width: 100%;
+  cursor: pointer;
 }
 
 .about-me {
@@ -408,7 +408,7 @@ button:active {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  list-style-image: url("./image/Rectangle_bullet.png");
+  list-style-image: url('./image/Rectangle_bullet.png');
   list-style-position: inside;
 }
 
@@ -418,7 +418,7 @@ button:active {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  list-style-image: url("./image/Rectangle_45degrees_bullet.png");
+  list-style-image: url('./image/Rectangle_45degrees_bullet.png');
   list-style-position: inside;
 }
 
@@ -428,7 +428,7 @@ button:active {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  list-style-image: url("./image/circle-bullet.png");
+  list-style-image: url('./image/circle-bullet.png');
   list-style-position: inside;
 }
 
@@ -531,7 +531,204 @@ footer {
     transform: rotate(360deg);
   }
 }
+/* Modal section  */
+.modal-section {
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 45px 10px 30px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s ease 0.5s;
+  z-index: 99999;
+}
 
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow: scroll;
+}
+
+.modal h3 {
+  font-size: 32px;
+  line-height: 42px;
+  width: 90%;
+  padding-bottom: 40px;
+}
+
+.modal .close-btn {
+  cursor: pointer;
+  position: fixed;
+  top: 15%;
+  left: 85%;
+}
+
+.modal p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.modal .modal-btn {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.modal-btn button {
+  font-size: 18px;
+  padding: 12px;
+}
+
+.modal .multi-image {
+  width: 100%;
+}
+
+#tech-used {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 17px;
+}
+
+#tech-used .item {
+  border: solid 2px gray;
+  padding: 5px;
+}
+
+.modal-icon {
+  padding-left: 15px;
+}
+
+/* Popup windows */
+
+.popup {
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 45px 10px 30px 10px;
+  transition: visibility 0s ease 0.5s;
+  z-index: 99999;
+}
+
+.popup-section {
+  display: none;
+}
+
+.new-close-img {
+  cursor: pointer;
+  align-self: flex-end;
+  transform: translate(-10px, 10px);
+}
+
+.new-title {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  padding-left: 1%;
+}
+
+.new-btns {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1%;
+}
+
+.new-btns a:first-child {
+  color: white;
+  margin: 0;
+  background: #f55800 url('image/see-live-icon.svg') 90% 50% no-repeat;
+  font-size: 17px;
+  width: 150px;
+  padding-left: 1%;
+}
+
+.new-btns a:last-child {
+  color: white;
+  margin: 0;
+  background: #f55800 url('image/see-source-icon.svg') 90% 50% no-repeat;
+  width: 150px;
+  background-size: 24px 24px;
+  font-size: 17px;
+  padding-left: 1%;
+}
+
+.new-techno {
+  justify-content: start;
+  padding-left: 1%;
+}
+
+.new-description {
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #344563;
+  padding-left: 1%;
+}
+
+.button {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  border: none;
+  padding: 12px;
+  height: 48px;
+  align-self: center;
+  text-decoration: none;
+  padding-left: 1%;
+}
+
+.new-btns a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55b00;
+  color: #f55800;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  padding-bottom: 17px;
+}
+
+.tags h6 {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3a4a42;
+  margin: 0;
+  border: solid 2px gray;
+  padding: 6px;
+}
+.new-project-img {
+  width: 99%;
+
+  grid-area: a;
+}
 /* Desktop Version */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -566,7 +763,7 @@ footer {
   }
 
   .about-me {
-    content: "";
+    content: '';
     background-color: #1c1a19;
     background-image: url(./image/illustration12.png);
     background-repeat: no-repeat;
@@ -577,6 +774,54 @@ footer {
 
   .about-me .hr {
     padding-top: 100px;
+  }
+
+  .modal-section {
+    padding: 30px;
+  }
+
+  .modal {
+    padding: 15px;
+  }
+
+  .modal h3 {
+    padding-top: 5px;
+    font-size: 2.8rem;
+    padding-bottom: 20px;
+  }
+
+  .modal .close-btn {
+    left: 85%;
+    top: 15%;
+  }
+
+  .modal-details {
+    display: flex;
+    gap: 40px;
+  }
+
+  .modal p {
+    width: 60%;
+  }
+
+  .modal .modal-btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: -20px;
+    gap: 10px;
+  }
+
+  .modal-btn button {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .modal .multi-image {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
   }
 }
 
@@ -768,7 +1013,7 @@ footer {
   }
 
   .about-me {
-    content: "";
+    content: '';
     background-color: #1c1a19;
     background-image: url(./image/illustration12.png);
     background-repeat: no-repeat;
@@ -869,5 +1114,83 @@ footer {
     to {
       transform: scale(1.1);
     }
+  }
+  /* pop up window */
+
+  .modal-section {
+    padding: 60px 80px;
+  }
+
+  .modal {
+    padding: 20px;
+    border: solid 4px #ff6b00;
+  }
+
+  .modal .close-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 15%;
+    left: 88%;
+  }
+
+  .modal h3 {
+    padding-top: 10px;
+    font-size: 2.8rem;
+    padding-bottom: 10px;
+  }
+
+  .modal-content {
+    display: flex;
+    gap: 15px;
+  }
+
+  .sec-container {
+    display: grid;
+    grid-template-areas:
+      'a a a b b'
+      'a a a b b'
+      'a a a c c';
+    column-gap: 20px;
+  }
+
+  .new-btns {
+    grid-area: c;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .modal p {
+    font-size: 16px;
+    grid-area: b;
+    padding: 0;
+  }
+
+  .modal .modal-btn {
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 50px;
+  }
+
+  .modal .multi-image {
+    width: 60%;
+    height: auto;
+  }
+
+  .modal-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popup {
+    padding: 60px 80px;
+  }
+
+  .new-project-img {
+    width: 38rem;
+    grid-area: a;
   }
 }
