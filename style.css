@@ -1191,4 +1191,9 @@ footer {
   .popup {
     padding: 60px 80px;
   }
+
+  .new-project-img {
+    width: 38rem;
+    grid-area: a;
+  }
 }
