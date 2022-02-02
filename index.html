@@ -207,14 +207,45 @@
               contact-me
              ================ -->
              <section class="contact-me" id="contact-me">
-                <h6 id="text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h6>
-                <form action="https://formspree.io/f/moqrjalz" method="post">
-                    <input name="fullname" type="text" placeholder="Full name" minlength="5" maxlength="50" required>
-                    <input name="email" type="email" placeholder="Email address" required>
-                    <textarea name="message" minlength="5" maxlength="500" required>Enter text here</textarea>
-                    <button type="submit">Get in touch</button>
+                <h6 id="text">
+                  I'm always interested in hearing about new projects, so if you'd like
+                  to chat please get in touch.
+                </h6>
+                <form id="form" action="https://formspree.io/f/moqrjalz" method="post">
+                  <input
+                    name="fullname"
+                    id="fullname"
+                    class="stored"
+                    type="text"
+                    placeholder="Full name"
+                    minlength="5"
+                    maxlength="50"
+                    aria-label=" full name"
+                    required
+                  />
+                  <input
+                    name="email"
+                    id="email"
+                    class="stored"
+                    type="email"
+                    placeholder="Email address"
+                    aria-label=" Email Address"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="stored"
+                    minlength="5"
+                    maxlength="500"
+                    aria-label=" Comments"
+                    required
+                    placeholder="Enter text here"
+                  ></textarea>
+                  <button id="submit" type="submit">Get in touch</button>
+                  <label id="error-message"></label>
                 </form>
-            </section><!-- #contact-me -->
+              </section><!-- #contact-me -->
         <!-- ================
               Footer
           ================ -->
