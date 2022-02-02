@@ -724,7 +724,11 @@ footer {
   border: solid 2px gray;
   padding: 6px;
 }
+.new-project-img {
+  width: 99%;
 
+  grid-area: a;
+}
 /* Desktop Version */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
