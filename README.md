@@ -16,8 +16,6 @@ You can download my project copy this link(git@github.com:samiullahbahadur/Portf
 - CSS
 - Javascript
 
-## Live Demo
-
 - [Bahadur-Portfolio](https://samiullahbahadur.github.io/Portfolio/).
 
 👤 **Samiullah Bahadur**
