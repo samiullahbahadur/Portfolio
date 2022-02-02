@@ -6,24 +6,13 @@ const navSlide = () => {
     nav.classList.toggle('nav-active');
     burger.classList.toggle('toggle');
   });
-  document.querySelectorAll('.nav-link').forEach(n =>
-    n.addEventListener('click', () => {
-      nav.classList.remove('nav-active');
-      burger.classList.remove('toggle');
 
-  const burger = document.querySelector(".humberger-menu");
-  const nav = document.querySelector(".desktop-nav");
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-    burger.classList.toggle("toggle");
-  });
-  document.querySelectorAll(".nav-link").forEach((n) =>
-    n.addEventListener("click", () => {
-      nav.classList.remove("nav-active");
-      burger.classList.remove("toggle");
+  document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+    nav.classList.remove('nav-active');
+    burger.classList.remove('toggle');
+  }));
 
-    })
-  );
+ 
 };
 
 navSlide();
@@ -59,15 +48,18 @@ modalClose.addEventListener("click", () => {
 const popupBtn = document.querySelectorAll('.card-button');
 
 const popupTitle = [];
-document.querySelectorAll('div.flex-container > h4').forEach(item => {
+document.querySelectorAll('div.flex-container > h4').forEach((item) => {
   popupTitle.push(item.textContent);
 });
 
 const popupTechno = ['HTML', 'Bootstrap', 'Ruby on Rails'];
 
-const popupDescrip =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-const popupLive = 'https://samiullahbahadur.github.io/Portfolio/';
+
+const popupDescrip = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+const popupLive = 'https://samiullahbahadur.github.io/portfolio/';
+
+
+
 const popupSource = 'https://github.com/samiullahbahadur/portfolio';
 
 const popupBtn = document.querySelectorAll(".card-button");
@@ -178,7 +170,7 @@ secondBtn.className = 'button';
 secondBtn.textContent = 'See Source';
 newBtns.appendChild(secondBtn);
 
-const openPopup = item => {
+const openPopup = (item) => {
   popupSection.classList.toggle('popup');
   popupSection.classList.toggle('popup-section');
 
@@ -224,12 +216,12 @@ const openPopup = (item) => {
 };
 
 
-popupBtn.forEach(item => {
+popupBtn.forEach((item) => {
   item.addEventListener('click', openPopup);
 });
 
 const closeBtn = document.querySelectorAll('.new-close-img');
-closeBtn.forEach(item => {
+closeBtn.forEach((item) => {
   item.addEventListener('click', openPopup);
 
 popupBtn.forEach((item) => {
