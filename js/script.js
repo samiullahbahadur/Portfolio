@@ -130,7 +130,9 @@ const closeBtn = document.querySelectorAll('.new-close-img');
 closeBtn.forEach((item) => {
   item.addEventListener('click', openPopup);
 });
+
 /* Contact Form validation */
+
 
 const emailInpute = document.querySelector('#email');
 const submitBtn = document.querySelector('#submit');
