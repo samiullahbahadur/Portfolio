@@ -133,7 +133,6 @@ closeBtn.forEach((item) => {
 
 /* Contact Form validation */
 
-
 const emailInpute = document.querySelector('#email');
 const submitBtn = document.querySelector('#submit');
 const errorMessage = document.querySelector('#error-message');
