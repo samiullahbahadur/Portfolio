@@ -1207,4 +1207,7 @@ footer {
     width: 38rem;
     grid-area: a;
   }
+  .wrong-email {
+    text-align: left;
+  }
 }
