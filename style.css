@@ -301,7 +301,8 @@ button:active {
 
 .card-content {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -826,6 +827,7 @@ footer {
     padding-bottom: 10px;
   }
 }
+
 /* Contact form validation */
 .wrong-email {
   font-size: large;
@@ -834,6 +836,7 @@ footer {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .deactive-error {
   display: none;
 }
@@ -1207,6 +1210,7 @@ footer {
     width: 38rem;
     grid-area: a;
   }
+
   .wrong-email {
     text-align: left;
   }
