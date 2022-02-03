@@ -301,7 +301,8 @@ button:active {
 
 .card-content {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -825,16 +826,19 @@ footer {
     margin-right: auto;
     padding-bottom: 10px;
   }
-} /* contact form validation */
-.wrong-email {
-  text-align: left;
-}
+} 
+/* contact form validation */
+
 .wrong-email {
   font-size: large;
   color: #f55800;
   display: block;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.deactive-error {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -1206,6 +1210,7 @@ footer {
     width: 38rem;
     grid-area: a;
   }
+
   .deactive-error {
     display: none;
   }
