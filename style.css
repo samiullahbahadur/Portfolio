@@ -825,6 +825,16 @@ footer {
     margin-right: auto;
     padding-bottom: 10px;
   }
+} /* contact form validation */
+.wrong-email {
+  text-align: left;
+}
+.wrong-email {
+  font-size: large;
+  color: #f55800;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
