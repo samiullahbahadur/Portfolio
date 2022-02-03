@@ -826,9 +826,9 @@ footer {
     margin-right: auto;
     padding-bottom: 10px;
   }
-} 
-/* contact form validation */
+}
 
+/* Contact form validation */
 .wrong-email {
   font-size: large;
   color: #f55800;
@@ -1211,7 +1211,7 @@ footer {
     grid-area: a;
   }
 
-  .deactive-error {
-    display: none;
+  .wrong-email {
+    text-align: left;
   }
 }
