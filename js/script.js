@@ -6,10 +6,12 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
   });
 
-  document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-    nav.classList.remove('nav-active');
-    burger.classList.remove('toggle');
-  }));
+  document.querySelectorAll('.nav-link').forEach(n =>
+    n.addEventListener('click', () => {
+      nav.classList.remove('nav-active');
+      burger.classList.remove('toggle');
+    })
+  );
 };
 
 navSlide();
@@ -34,16 +36,17 @@ modalClose.addEventListener('click', () => {
 const popupBtn = document.querySelectorAll('.card-button');
 
 const popupTitle = [];
-document.querySelectorAll('div.flex-container > h4').forEach((item) => {
+document.querySelectorAll('div.flex-container > h4').forEach(item => {
   popupTitle.push(item.textContent);
 });
 
 const popupTechno = ['HTML', 'Bootstrap', 'Ruby on Rails'];
 
-const popupDescrip = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-const popupLive = 'https://samiullahbahadur.github.io/Portfolio/';
+const popupDescrip =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+const popupLive = 'https://budget1-app.herokuapp.com/splashs/index/';
 
-const popupSource = 'https://github.com/samiullahbahadur/portfolio';
+const popupSource = 'https://github.com/samiullahbahadur/budget-app';
 
 const popupObj = {};
 for (let i = 0; i < popupTitle.length; i += 1) {
@@ -111,7 +114,7 @@ secondBtn.className = 'button';
 secondBtn.textContent = 'See Source';
 newBtns.appendChild(secondBtn);
 
-const openPopup = (item) => {
+const openPopup = item => {
   popupSection.classList.toggle('popup');
   popupSection.classList.toggle('popup-section');
 
@@ -122,12 +125,12 @@ const openPopup = (item) => {
   }
 };
 
-popupBtn.forEach((item) => {
+popupBtn.forEach(item => {
   item.addEventListener('click', openPopup);
 });
 
 const closeBtn = document.querySelectorAll('.new-close-img');
-closeBtn.forEach((item) => {
+closeBtn.forEach(item => {
   item.addEventListener('click', openPopup);
 });
 
@@ -142,7 +145,7 @@ error.className = 'deactive-error';
 error.innerText = 'Email should be in LowerCase';
 errorMessage.appendChild(error);
 
-const failed = (event) => {
+const failed = event => {
   event.preventDefault();
 
   error.classList.add('wrong-email');
@@ -154,7 +157,7 @@ const success = () => {
   error.classList.add('deactive-error');
 };
 
-submitBtn.addEventListener('click', (event) => {
+submitBtn.addEventListener('click', event => {
   const pattern = /[A-Z]/;
   if (pattern.test(emailInpute.value)) {
     failed(event);
@@ -171,7 +174,7 @@ const textField = document.querySelector('#message');
 const storeds = document.querySelectorAll('.stored');
 const obj = {};
 
-storeds.forEach((item) => {
+storeds.forEach(item => {
   item.addEventListener('input', () => {
     obj.email = emailField.value;
 
